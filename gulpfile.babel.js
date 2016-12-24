@@ -40,7 +40,7 @@ gulp.task('default', async () => {
 
   util.log(`Downloading forge`);
   await downloadFile(forgeUri, 'dist/bin/modpack.jar');
-  await downloadFile(serverUri, 'dist/bin/server.jar');
+  await downloadFile(serverUri, 'dist/bin/minecraft_server-1.10.2.jar');
   util.log(`Successfully downloaded forge to ${chalk.magenta('dist/bin/modpack.jar')}`);
 });
 
