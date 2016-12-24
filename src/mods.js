@@ -40,5 +40,10 @@ module.exports = [
     name: 'Mantle',
     path: 'mantle.jar',
     url: 'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar'
+  },
+  {
+    name: 'CodeChickenLib',
+    path: 'chicken.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2356/881/CodeChickenLib-1.10.2-2.5.0.178-universal.jar'
   }
 ];
