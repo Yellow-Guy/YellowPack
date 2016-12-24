@@ -59,13 +59,17 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2347/456/BiomesOPlenty-1.10.2-5.0.0.2109-universal.jar',
   'https://addons-origin.cursecdn.com/files/2351/656/zerocore-1.10.2-0.0.8.2.jar',
   'https://addons-origin.cursecdn.com/files/2354/613/modularity-3.0.2.jar',
-  'https://addons-origin.cursecdn.com/files/2358/355/AstroLib-2.1.1-jenkins25.jar'
+  'https://addons-origin.cursecdn.com/files/2358/355/AstroLib-2.1.1-jenkins25.jar',
+  'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
+  'https://addons-origin.cursecdn.com/files/2338/989/InventoryTweaks-1.62-dev-66.jar',
+  'https://addons-origin.cursecdn.com/files/2354/101/mod_voxelMap_1.6.18_for_1.10.2.litemod'
 ];
 let cnt = 0;
 for (const extra of extras) {
+  const split = extra.split('.');
   module.exports.push({
     name: 'mod-' + cnt,
-    path: 'ext-' + cnt + '.jar',
+    path: 'ext-' + cnt + '.' + split[split.length - 1],
     url: extra
   });
   cnt++;
