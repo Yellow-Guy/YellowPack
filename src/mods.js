@@ -55,10 +55,11 @@ module.exports = [
 
 // i got lazy
 const extras = [
-  'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar'
+  'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar',
+  'https://addons-origin.cursecdn.com/files/2347/456/BiomesOPlenty-1.10.2-5.0.0.2109-universal.jar'
 ];
 let cnt = 0;
-for (const extra in extras) {
+for (const extra of extras) {
   module.exports.push({
     name: 'mod-' + cnt,
     path: 'ext-' + cnt + '.jar',

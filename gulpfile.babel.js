@@ -35,11 +35,6 @@ gulp.task('default', async () => {
   await downloadFile(forgeUri, 'dist/bin/modpack.jar');
   await downloadFile(serverUri, 'dist/bin/server.jar');
   util.log(`Successfully downloaded forge to ${chalk.magenta('dist/bin/modpack.jar')}`);
-  const zip = new AdmZip();
-  zip.addLocalFolder('dist');
-  // it doesn't work
-  // zip.writeZip('dist/dist.zip');
-  util.log(`Saved all files into ${chalk.magenta('dist/dist.zip')}`);
 });
 
 gulp.task('clean', () => fs.emptyDirAsync('dist'));
