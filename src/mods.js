@@ -68,7 +68,16 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2359/1/VeinMiner-1.9-0.35.2.593+52f8979.jar',
   'https://addons-origin.cursecdn.com/files/2323/713/BetterSprinting%20%20MC-1.10.2%20%20v1.1.7.jar',
   'https://addons-origin.cursecdn.com/files/2322/533/BetterMinecraftChat_1.10.2-4.1.6.jar',
-  'https://addons-origin.cursecdn.com/files/2321/22/MouseTweaks-2.6.4-mc1.10.2.jar'
+  'https://addons-origin.cursecdn.com/files/2321/22/MouseTweaks-2.6.4-mc1.10.2.jar',
+  'https://addons-origin.cursecdn.com/files/2341/593/Pam\'s%20HarvestCraft%201.9.4-1.10.2h.jar',
+  'https://addons-origin.cursecdn.com/files/2343/32/natura-1.10.2-4.0.0.93.jar',
+  'https://addons-origin.cursecdn.com/files/2331/308/ironchest-1.10.2-7.0.11.797.jar',
+  'https://addons-origin.cursecdn.com/files/2358/959/EnderIO-1.10.2-3.0.1.145_beta.jar',
+  'https://addons-origin.cursecdn.com/files/2337/887/mcjtylib-1.10-2.2.0.jar',
+  'https://addons-origin.cursecdn.com/files/2358/974/rftools-1.1x-5.72.jar',
+  'https://addons-origin.cursecdn.com/files/2354/786/rftoolsdim-1.1x-4.51.jar',
+  'https://addons-origin.cursecdn.com/files/2354/280/rftoolsctrl-1.1x-1.6.3.jar',
+  'https://addons-origin.cursecdn.com/files/2312/494/EnderZoo-1.10-1.2.3.43.jar'
 ];
 let cnt = 0;
 for (const extra of extras) {
