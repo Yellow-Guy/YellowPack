@@ -77,7 +77,8 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2358/974/rftools-1.1x-5.72.jar',
   'https://addons-origin.cursecdn.com/files/2354/786/rftoolsdim-1.1x-4.51.jar',
   'https://addons-origin.cursecdn.com/files/2354/280/rftoolsctrl-1.1x-1.6.3.jar',
-  'https://addons-origin.cursecdn.com/files/2312/494/EnderZoo-1.10-1.2.3.43.jar'
+  'https://addons-origin.cursecdn.com/files/2312/494/EnderZoo-1.10-1.2.3.43.jar',
+  'https://addons-origin.cursecdn.com/files/2355/274/EnderCore-1.10.2-0.4.1.61-beta.jar'
 ];
 let cnt = 0;
 for (const extra of extras) {
