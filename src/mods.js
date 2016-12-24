@@ -62,7 +62,11 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2358/355/AstroLib-2.1.1-jenkins25.jar',
   'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
   'https://addons-origin.cursecdn.com/files/2338/989/InventoryTweaks-1.62-dev-66.jar',
-  'https://addons-origin.cursecdn.com/files/2354/101/mod_voxelMap_1.6.18_for_1.10.2.litemod'
+  'https://addons-origin.cursecdn.com/files/2354/101/mod_voxelMap_1.6.18_for_1.10.2.litemod',
+  'https://addons-origin.cursecdn.com/files/2301/859/Waila-1.7.0-B3_1.9.4.jar',
+  'https://addons-origin.cursecdn.com/files/2342/267/Wawla-1.10.2-2.3.1.213.jar',
+  'https://addons-origin.cursecdn.com/files/2359/1/VeinMiner-1.9-0.35.2.593+52f8979.jar',
+  'https://addons-origin.cursecdn.com/files/2323/713/BetterSprinting%20%20MC-1.10.2%20%20v1.1.7.jar'
 ];
 let cnt = 0;
 for (const extra of extras) {
