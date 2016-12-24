@@ -45,5 +45,24 @@ module.exports = [
     name: 'CodeChickenLib',
     path: 'chicken.jar',
     url: 'https://addons-origin.cursecdn.com/files/2356/881/CodeChickenLib-1.10.2-2.5.0.178-universal.jar'
+  },
+  {
+    name: 'Refined Storage',
+    path: 'refined.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar'
   }
 ];
+
+// i got lazy
+const extras = [
+  'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar'
+];
+let cnt = 0;
+for (const extra in extras) {
+  module.exports.push({
+    name: 'mod-' + cnt,
+    path: 'ext-' + cnt + '.jar',
+    url: extra
+  });
+  cnt++;
+}
