@@ -35,5 +35,10 @@ module.exports = [
     name: 'JEI',
     path: 'jei.jar',
     url: 'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar'
+  },
+  {
+    name: 'Mantle',
+    path: 'mantle.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar'
   }
 ];
