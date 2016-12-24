@@ -30,5 +30,10 @@ module.exports = [
     name: 'ProjectE',
     path: 'projecte.jar',
     url: 'https://addons-origin.cursecdn.com/files/2357/355/ProjectE-1.10.2-PE1.1.1B.jar'
+  },
+  {
+    name: 'JEI',
+    path: 'jei.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar'
   }
 ];
