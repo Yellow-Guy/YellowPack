@@ -66,7 +66,9 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2301/859/Waila-1.7.0-B3_1.9.4.jar',
   'https://addons-origin.cursecdn.com/files/2342/267/Wawla-1.10.2-2.3.1.213.jar',
   'https://addons-origin.cursecdn.com/files/2359/1/VeinMiner-1.9-0.35.2.593+52f8979.jar',
-  'https://addons-origin.cursecdn.com/files/2323/713/BetterSprinting%20%20MC-1.10.2%20%20v1.1.7.jar'
+  'https://addons-origin.cursecdn.com/files/2323/713/BetterSprinting%20%20MC-1.10.2%20%20v1.1.7.jar',
+  'https://addons-origin.cursecdn.com/files/2322/533/BetterMinecraftChat_1.10.2-4.1.6.jar',
+  'https://addons-origin.cursecdn.com/files/2321/22/MouseTweaks-2.6.4-mc1.10.2.jar'
 ];
 let cnt = 0;
 for (const extra of extras) {

@@ -31,6 +31,7 @@ gulp.task('default', async () => {
     await downloadFile(mod.url, 'dist/mods/' + mod.path);
     util.log(`Sucessfully saved ${chalk.green(mod.name)} to ${chalk.magenta(mod.path)}`);
   }
+
   // special case for optifine
   const $ = cheerio.load(await rp('http://optifine.net/adloadx?f=OptiFine_1.10.2_HD_U_D4.jar'));
   await downloadFile('http://optifine.net/' + $('#Download').find('a').attr('href'), 'dist/mods/optifine.jar');
