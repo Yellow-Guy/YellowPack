@@ -18,6 +18,7 @@ function downloadFile (url, path) {
 }
 
 const forgeUri = 'http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2185/forge-1.10.2-12.18.3.2185-universal.jar';
+const serverUri = 'https://launcher.mojang.com/mc/game/1.10.2/server/3d501b23df53c548254f5e3f66492d178a48db63/server.jar'
 gulp.task('default', async () => {
   await fs.emptyDirAsync('dist');
   await fs.ensureDirAsync('dist/mods');
@@ -32,6 +33,7 @@ gulp.task('default', async () => {
   await fs.copyAsync('src/mods-config', 'dist/config');
   util.log(`Downloading forge`);
   await downloadFile(forgeUri, 'dist/bin/modpack.jar');
+  await downloadFile(serverUri, 'dist/bin/server.jar');
   util.log(`Successfully downloaded forge to ${chalk.magenta('dist/bin/modpack.jar')}`);
   const zip = new AdmZip();
   zip.addLocalFolder('dist');
