@@ -73,7 +73,7 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2343/32/natura-1.10.2-4.0.0.93.jar',
   'https://addons-origin.cursecdn.com/files/2331/308/ironchest-1.10.2-7.0.11.797.jar',
   'https://addons-origin.cursecdn.com/files/2358/959/EnderIO-1.10.2-3.0.1.145_beta.jar',
-  'https://addons-origin.cursecdn.com/files/2337/887/mcjtylib-1.10-2.2.0.jar',
+  'https://addons-origin.cursecdn.com/files/2352/866/mcjtylib-1.1x-2.3.1.jar',
   'https://addons-origin.cursecdn.com/files/2358/974/rftools-1.1x-5.72.jar',
   'https://addons-origin.cursecdn.com/files/2354/786/rftoolsdim-1.1x-4.51.jar',
   'https://addons-origin.cursecdn.com/files/2354/280/rftoolsctrl-1.1x-1.6.3.jar',
