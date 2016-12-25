@@ -87,3 +87,5 @@ $RECYCLE.BIN/
 
 
 dist
+
+yarn.lock
