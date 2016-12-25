@@ -86,7 +86,7 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
   'http://asie.pl/foamfix/foamfix-0.4.2-anarchy.jar',
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
-  'https://addons-origin.cursecdn.com/files/2347/878/Stellar%20Sky-0.6.5.1.2.jar'
+  'https://addons-origin.cursecdn.com/files/2319/228/Stellar%20Sky-0.5.5.1.7.jar'
 ];
 let cnt = 0;
 for (const extra of extras) {
