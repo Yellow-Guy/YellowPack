@@ -31,6 +31,10 @@
     "request-progress": "^3.0.0",
     "request-promise": "^4.1.1",
     "semistandard": "^9.2.1",
-    "stream-to-promise": "^2.2.0"
+    "stream-to-promise": "^2.2.0",
+    "nodegit": "^0.16.0"
+  },
+  "dependencies": {
+
   }
 }
