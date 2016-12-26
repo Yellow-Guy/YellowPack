@@ -88,7 +88,8 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
   'https://addons-origin.cursecdn.com/files/2342/576/UniDict-1.10.2-2.4.jar',
   'https://addons-origin.cursecdn.com/files/2343/855/WanionLib-1.10.2-1.2.jar',
-  'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar'
+  'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar',
+  'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar'
 ];
 let cnt = 0;
 for (const extra of extras) {
