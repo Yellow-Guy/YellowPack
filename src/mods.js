@@ -4,49 +4,49 @@ module.exports = [
   {
     name: 'Tinker\'s Construct',
     path: 'tinkers-construct.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2353/329/TConstruct-1.10.2-2.6.1.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2353/329/TConstruct-1.10.2-2.6.1.jar'
   },
   {
     name: 'Mekanism',
     path: 'mekanism.jar',
-    url: 'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar',
+    url: 'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar'
   },
   {
     name: 'MekanismTools',
     path: 'mekanism-tools.jar',
-    url: 'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar',
+    url: 'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar'
   },
   {
     name: 'Extra Utilities 2',
     path: 'exu.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar'
   },
   {
     name: 'Chisels & Bits',
     path: 'chiselsandbits.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2350/460/chiselsandbits-12.8.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2350/460/chiselsandbits-12.8.jar'
   },
   {
     name: 'JEI',
     path: 'jei.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar'
   },
   {
     name: 'Mantle',
     path: 'mantle.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar'
   },
   {
     name: 'CodeChickenLib',
     path: 'chicken.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2356/881/CodeChickenLib-1.10.2-2.5.0.178-universal.jar',
+    url: 'https://addons-origin.cursecdn.com/files/2356/881/CodeChickenLib-1.10.2-2.5.0.178-universal.jar'
   },
   {
     name: 'Refined Storage',
     path: 'refined.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar',
-  },
-]
+    url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar'
+  }
+];
 
 // i got lazy
 const extras = [
@@ -81,18 +81,21 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
   'http://asie.pl/foamfix/foamfix-0.4.2-anarchy.jar',
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
+  'https://addons-origin.cursecdn.com/files/2391/183/ThermalExpansion-1.10.2-5.0.3.86-universal.jar',
+  'https://addons-origin.cursecdn.com/files/2391/154/ThermalFoundation-1.10.2-2.0.3.77-universal.jar',
+  
   'https://addons-origin.cursecdn.com/files/2342/576/UniDict-1.10.2-2.4.jar',
   'https://addons-origin.cursecdn.com/files/2343/855/WanionLib-1.10.2-1.2.jar',
   'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar',
-  'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar',
-]
-let cnt = 0
+  'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar'
+];
+let cnt = 0;
 for (const extra of extras) {
-  const split = extra.split('.')
+  const split = extra.split('.');
   module.exports.push({
-    name: `mod-${cnt}`,
-    path: `ext-${cnt}.${split[split.length - 1]}`,
-    url: extra,
-  })
-  cnt += 1
+    name: 'mod-' + cnt,
+    path: 'ext-' + cnt + '.' + split[split.length - 1],
+    url: extra
+  });
+  cnt++;
 }
