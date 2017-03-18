@@ -91,7 +91,7 @@ const extras = [
 ]
 let cnt = 0
 for (const extra of extras) {
-  const split = extra.split('.')
+  const split = extra.split('?')[0].split('.')
   module.exports.push({
     name: `mod-${cnt}`,
     path: `ext-${cnt}.${split[split.length - 1]}`,
