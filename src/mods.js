@@ -46,6 +46,11 @@ module.exports = [
     path: 'refined.jar',
     url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar',
   },
+  {
+    name: 'LiteLoader',
+    path: 'liteloader.jar',
+    url: 'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
+  },
 ]
 
 // i got lazy
@@ -53,7 +58,6 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar',
   'https://addons-origin.cursecdn.com/files/2347/456/BiomesOPlenty-1.10.2-5.0.0.2109-universal.jar',
   'https://addons-origin.cursecdn.com/files/2351/656/zerocore-1.10.2-0.0.8.2.jar',
-  'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
   'https://addons-origin.cursecdn.com/files/2338/989/InventoryTweaks-1.62-dev-66.jar',
   'https://addons-origin.cursecdn.com/files/2354/101/mod_voxelMap_1.6.18_for_1.10.2.litemod',
   'https://addons-origin.cursecdn.com/files/2301/859/Waila-1.7.0-B3_1.9.4.jar',
@@ -82,6 +86,7 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2343/855/WanionLib-1.10.2-1.2.jar',
   'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar',
   'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar',
+  'https://asie.pl/files/minecraft/foamfix-0.6.2-beta2-anarchy.jar',
 ]
 let cnt = 0
 for (const extra of extras) {

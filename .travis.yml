@@ -3,6 +3,9 @@ node_js:
   - "node"
 before_script:
   - npm install -g gulp-cli
-script: 
+script:
   - gulp
   - npm test
+addons:
+  apt:
+    - oracle-java8-installer
