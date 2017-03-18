@@ -78,6 +78,7 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2355/274/EnderCore-1.10.2-0.4.1.61-beta.jar',
   'https://addons-origin.cursecdn.com/files/2356/26/compatlayer-1.10-0.1.4.jar',
   'https://addons-origin.cursecdn.com/files/2359/322/Reliquary-1.10.2-1.3.3.606.jar',
+  'https://www.dropbox.com/s/otzxdeuo4963drp/zebrastogglesneak-1.10.2-1.4.5.jar?dl=1',
   'https://addons-origin.cursecdn.com/files/2330/62/AppleSkin-mc1.10.2-1.0.4.jar',
   'https://addons-origin.cursecdn.com/files/2354/186/SimplyJetpacks2-1.10.2-2.0.3.23.jar',
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
