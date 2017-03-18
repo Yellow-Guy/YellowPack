@@ -44,18 +44,21 @@ module.exports = [
   {
     name: 'Refined Storage',
     path: 'refined.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar'
-  }
-];
+
+    url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar',
+  },
+  {
+    name: 'LiteLoader',
+    path: 'liteloader.jar',
+    url: 'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
+  },
+]
 
 // i got lazy
 const extras = [
   'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar',
   'https://addons-origin.cursecdn.com/files/2347/456/BiomesOPlenty-1.10.2-5.0.0.2109-universal.jar',
   'https://addons-origin.cursecdn.com/files/2351/656/zerocore-1.10.2-0.0.8.2.jar',
-  'https://addons-origin.cursecdn.com/files/2354/613/modularity-3.0.2.jar',
-  'https://addons-origin.cursecdn.com/files/2358/355/AstroLib-2.1.1-jenkins25.jar',
-  'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
   'https://addons-origin.cursecdn.com/files/2338/989/InventoryTweaks-1.62-dev-66.jar',
   'https://addons-origin.cursecdn.com/files/2354/101/mod_voxelMap_1.6.18_for_1.10.2.litemod',
   'https://addons-origin.cursecdn.com/files/2301/859/Waila-1.7.0-B3_1.9.4.jar',
@@ -79,17 +82,17 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2330/62/AppleSkin-mc1.10.2-1.0.4.jar',
   'https://addons-origin.cursecdn.com/files/2354/186/SimplyJetpacks2-1.10.2-2.0.3.23.jar',
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
-  'http://asie.pl/foamfix/foamfix-0.4.2-anarchy.jar',
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
   'https://addons-origin.cursecdn.com/files/2391/183/ThermalExpansion-1.10.2-5.0.3.86-universal.jar',
   'https://addons-origin.cursecdn.com/files/2391/154/ThermalFoundation-1.10.2-2.0.3.77-universal.jar',
-  
   'https://addons-origin.cursecdn.com/files/2342/576/UniDict-1.10.2-2.4.jar',
   'https://addons-origin.cursecdn.com/files/2343/855/WanionLib-1.10.2-1.2.jar',
   'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar',
-  'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar'
-];
-let cnt = 0;
+  'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar',
+  'https://asie.pl/files/minecraft/foamfix-0.6.2-beta2-anarchy.jar',
+]
+let cnt = 0
+
 for (const extra of extras) {
   const split = extra.split('.');
   module.exports.push({
