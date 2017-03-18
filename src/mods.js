@@ -81,6 +81,8 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
   'http://asie.pl/foamfix/foamfix-0.4.2-anarchy.jar',
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
+  'https://addons-origin.cursecdn.com/files/2364/320/BetterBuildersWands-1.11-0.10.2.225+14b290d.jar',
+  'https://addons-origin.cursecdn.com/files/2362/522/appliedenergistics2-rv4-alpha-11.jar',
   'https://addons-origin.cursecdn.com/files/2342/576/UniDict-1.10.2-2.4.jar',
   'https://addons-origin.cursecdn.com/files/2343/855/WanionLib-1.10.2-1.2.jar',
   'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar',
