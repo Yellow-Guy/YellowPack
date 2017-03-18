@@ -54,7 +54,7 @@ gulp.task('prepareServer', ['default'], async () => {
   await fs.emptyDirAsync('server/config')
   await fs.copyAsync('dist/mods', 'server/mods')
   await fs.copyAsync('dist/config', 'server/config')
-  await fs.unlinkAsync('server/mods/ext-5.jar')
+  await fs.unlinkAsync('server/mods/liteloader.jar')
   util.log(`Successfully downloaded forge server to ${chalk.magenta('server/installer.jar')}`)
   await downloadFile('http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2254/forge-1.10.2-12.18.3.2254-installer.jar', 'server/install.jar')
 })
