@@ -77,7 +77,7 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2330/62/AppleSkin-mc1.10.2-1.0.4.jar',
   'https://addons-origin.cursecdn.com/files/2354/186/SimplyJetpacks2-1.10.2-2.0.3.23.jar',
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
-  'http://asie.pl/foamfix/foamfix-0.4.2-anarchy.jar',
+  'https://asie.pl/files/minecraft/foamfix-0.6.2-beta2-anarchy.jar',
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
   'https://addons-origin.cursecdn.com/files/2342/576/UniDict-1.10.2-2.4.jar',
   'https://addons-origin.cursecdn.com/files/2343/855/WanionLib-1.10.2-1.2.jar',
