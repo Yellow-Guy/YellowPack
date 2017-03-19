@@ -37,9 +37,8 @@ gulp.task('default', async () => {
   await fs.ensureDirAsync('dist/bin')
 
   for (const mod of mods) {
-    util.log(`Downloading ${chalk.green(mod.name)} from ${chalk.magenta(mod.url)}`)
     await downloadFile(mod.url, `dist/mods/${mod.path}`)
-    util.log(`Sucessfully saved ${chalk.green(mod.name)} to ${chalk.magenta(mod.path)}`)
+    util.log(`Downloaded mod from ${chalk.magenta(mod.url)}`)
   }
 
   // special case for optifine

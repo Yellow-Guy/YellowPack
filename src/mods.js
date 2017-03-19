@@ -91,6 +91,7 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2356/885/ChickenChunks-1.10.2-2.2.0.52-universal.jar',
   'https://addons-origin.cursecdn.com/files/2356/883/CodeChickenCore-1.10.2-2.4.0.100-universal.jar',
   'https://asie.pl/files/minecraft/foamfix-0.6.2-beta2-anarchy.jar',
+  'https://addons-origin.cursecdn.com/files/2391/153/CoFHCore-1.10.2-4.1.0.155-universal.jar',
 ]
 let cnt = 0
 for (const extra of extras) {
