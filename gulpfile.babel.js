@@ -63,11 +63,14 @@ gulp.task('prepareServer', ['default'], async () => {
   await fs.copyAsync('dist/mods', 'server/mods')
   await fs.copyAsync('dist/config', 'server/config')
   await fs.unlinkAsync('server/mods/liteloader.jar')
+  util.log(`Successfully downloaded forge server to ${chalk.magenta('server/installer.jar')}`)
+  await downloadFile('http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2254/forge-1.10.2-12.18.3.2254-installer.jar', 'server/install.jar')
+})
+
+gulp.task('prepareServer:test', () => {
   if (await exists('server/eula.txt')) {
     throw new Error('npm test is disabled if there is an installed server')
   }
-  util.log(`Successfully downloaded forge server to ${chalk.magenta('server/installer.jar')}`)
-  await downloadFile('http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2254/forge-1.10.2-12.18.3.2254-installer.jar', 'server/install.jar')
 })
 
 gulp.task('prepareServer:noCrash', async () => {
