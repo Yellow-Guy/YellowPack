@@ -82,6 +82,8 @@ const extras = [
   'https://www.dropbox.com/s/otzxdeuo4963drp/zebrastogglesneak-1.10.2-1.4.5.jar?dl=1',
   'https://addons-origin.cursecdn.com/files/2330/62/AppleSkin-mc1.10.2-1.0.4.jar',
   'https://addons-origin.cursecdn.com/files/2354/186/SimplyJetpacks2-1.10.2-2.0.3.23.jar',
+  'https://addons-origin.cursecdn.com/files/2391/183/ThermalExpansion-1.10.2-5.0.3.86-universal.jar',
+  'https://addons-origin.cursecdn.com/files/2391/154/ThermalFoundation-1.10.2-2.0.3.77-universal.jar',
   'https://addons-origin.cursecdn.com/files/2310/14/BetterFps-1.3.2.jar',
   'https://addons-origin.cursecdn.com/files/2358/274/Morpheus-1.10.2-3.1.13.jar',
   'https://addons-origin.cursecdn.com/files/2342/576/UniDict-1.10.2-2.4.jar',
