@@ -36,14 +36,21 @@ gulp.task('default', async () => {
   await fs.ensureDirAsync('dist/config')
   await fs.ensureDirAsync('dist/bin')
 
+  let i = 1
+
   for (const mod of mods) {
-    await downloadFile(mod.url, `dist/mods/${mod.path}`)
+    await downloadFile(mod.url, `dist/mods/mod-${i}`)
     util.log(`Downloaded mod from ${chalk.magenta(mod.url)}`)
+    i += 1
   }
 
-  // special case for optifine
+  // Special case for OptiFine
   const $ = cheerio.load(await rp('http://optifine.net/adloadx?f=OptiFine_1.10.2_HD_U_D4.jar'))
   await downloadFile(`http://optifine.net/${$('#Download').find('a').attr('href')}`, 'dist/mods/optifine.jar')
+
+  // Special case for liteloader
+  const liteloaderUrl = 'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar'
+  await downloadFile(liteloaderUrl, 'dist/mods/liteloader.jar')
 
   util.log(`Copying config from ${chalk.magenta('src/mods-config')} to ${chalk.magenta('dist/config')}`)
   await fs.copyAsync('src/mods-config', 'dist/config')

@@ -1,60 +1,13 @@
-// should be an array of objects with properties url, path, and name
-// all mods should be for 1.10.2
-module.exports = [
-  {
-    name: 'Tinker\'s Construct',
-    path: 'tinkers-construct.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2353/329/TConstruct-1.10.2-2.6.1.jar',
-  },
-  {
-    name: 'Mekanism',
-    path: 'mekanism.jar',
-    url: 'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar',
-  },
-  {
-    name: 'MekanismTools',
-    path: 'mekanism-tools.jar',
-    url: 'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar',
-  },
-  {
-    name: 'Extra Utilities 2',
-    path: 'exu.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
-  },
-  {
-    name: 'Chisels & Bits',
-    path: 'chiselsandbits.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2350/460/chiselsandbits-12.8.jar',
-  },
-  {
-    name: 'JEI',
-    path: 'jei.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar',
-  },
-  {
-    name: 'Mantle',
-    path: 'mantle.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar',
-  },
-  {
-    name: 'CodeChickenLib',
-    path: 'chicken.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2356/881/CodeChickenLib-1.10.2-2.5.0.178-universal.jar',
-  },
-  {
-    name: 'Refined Storage',
-    path: 'refined.jar',
-    url: 'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar',
-  },
-  {
-    name: 'LiteLoader',
-    path: 'liteloader.jar',
-    url: 'http://jenkins.liteloader.com/view/1.10.2/job/LiteLoader%201.10.2/lastSuccessfulBuild/artifact/build/libs/liteloader-1.10.2-SNAPSHOT-release.jar',
-  },
-]
-
-// i got lazy
-const extras = [
+export default [
+  'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/Mekanism-1.10.2-9.2.1.295.jar',
+  'http://aidancbrady.com/wp-content/uploads/mekanism/295-recommended/MekanismTools-1.10.2-9.2.1.295.jar',
+  'https://addons-origin.cursecdn.com/files/2355/919/extrautils2-1.10.2-1.1.3a.jar',
+  'https://addons-origin.cursecdn.com/files/2350/460/chiselsandbits-12.8.jar',
+  'https://addons-origin.cursecdn.com/files/2357/416/jei_1.10.2-3.13.6.392.jar',
+  'https://addons-origin.cursecdn.com/files/2353/326/Mantle-1.10.2-1.1.3.jar',
+  'https://addons-origin.cursecdn.com/files/2356/881/CodeChickenLib-1.10.2-2.5.0.178-universal.jar',
+  'https://addons-origin.cursecdn.com/files/2359/687/refinedstorage-1.2.13.jar',
+  'https://addons-origin.cursecdn.com/files/2353/329/TConstruct-1.10.2-2.6.1.jar',
   'https://addons-origin.cursecdn.com/files/2359/908/ExtremeReactors-1.10.2-0.4.5.22.jar',
   'https://addons-origin.cursecdn.com/files/2347/456/BiomesOPlenty-1.10.2-5.0.0.2109-universal.jar',
   'https://addons-origin.cursecdn.com/files/2351/656/zerocore-1.10.2-0.0.8.2.jar',
@@ -94,13 +47,3 @@ const extras = [
   'https://addons-origin.cursecdn.com/files/2391/153/CoFHCore-1.10.2-4.1.0.155-universal.jar',
   'http://chickenbones.net/maven/codechicken/CodeChickenLib/1.11.2-2.6.0.231/CodeChickenLib-1.11.2-2.6.0.231-universal.jar',
 ]
-let cnt = 0
-for (const extra of extras) {
-  const split = extra.split('?')[0].split('.')
-  module.exports.push({
-    name: `mod-${cnt}`,
-    path: `ext-${cnt}.${split[split.length - 1]}`,
-    url: extra,
-  })
-  cnt += 1
-}
