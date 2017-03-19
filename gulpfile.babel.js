@@ -67,7 +67,7 @@ gulp.task('prepareServer', ['default'], async () => {
   await downloadFile('http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2254/forge-1.10.2-12.18.3.2254-installer.jar', 'server/install.jar')
 })
 
-gulp.task('prepareServer:test', () => {
+gulp.task('prepareServer:test', async () => {
   if (await exists('server/eula.txt')) {
     throw new Error('npm test is disabled if there is an installed server')
   }
