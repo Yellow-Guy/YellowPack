@@ -18,7 +18,7 @@ function downloadFile(url, path) {
   return streamToPromise(src)
 }
 
-async function exists(path) {
+const exists = async function exists(path) {
   try {
     await fs.accessAsync(path)
     return true
