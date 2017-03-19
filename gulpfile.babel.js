@@ -18,6 +18,15 @@ function downloadFile(url, path) {
   return streamToPromise(src)
 }
 
+async function exists(path) {
+  try {
+    await fs.accessAsync(path)
+    return true
+  } catch (e) {
+    return false
+  }
+}
+
 const forgeUri = 'http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2185/forge-1.10.2-12.18.3.2185-universal.jar'
 const serverUri = 'https://launcher.mojang.com/mc/game/1.10.2/server/3d501b23df53c548254f5e3f66492d178a48db63/server.jar'
 
@@ -57,6 +66,12 @@ gulp.task('prepareServer', ['default'], async () => {
   await fs.unlinkAsync('server/mods/liteloader.jar')
   util.log(`Successfully downloaded forge server to ${chalk.magenta('server/installer.jar')}`)
   await downloadFile('http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.3.2254/forge-1.10.2-12.18.3.2254-installer.jar', 'server/install.jar')
+})
+
+gulp.task('prepareServer:noCrash', async () => {
+  if (await exists('server/crash-reports')) {
+    throw new Error()
+  }
 })
 
 export default null

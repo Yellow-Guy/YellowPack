@@ -6,7 +6,7 @@
   "scripts": {
     "server:prepare": "gulp prepareServer && cd server && java -jar install.jar --installServer ",
     "server": "npm run server:prepare && mkdir -p server && echo eula=true > server/eula.txt && cd server && java -jar forge-1.10.2-12.18.3.2254-universal.jar nogui",
-    "test": "eslint . && echo stop | npm run server"
+    "test": "eslint . && echo stop | npm run server && gulp prepareServer:noCrash"
   },
   "repository": {
     "type": "git",
