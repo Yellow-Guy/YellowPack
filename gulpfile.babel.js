@@ -39,8 +39,8 @@ gulp.task('default', async () => {
   let i = 1
 
   for (const mod of mods) {
-    await downloadFile(mod.url, `dist/mods/mod-${i}`)
-    util.log(`Downloaded mod from ${chalk.magenta(mod.url)}`)
+    await downloadFile(mod, `dist/mods/mod-${i}.${mod.split('?')[0].split('.').pop()}`)
+    util.log(`Downloaded mod from ${chalk.magenta(mod)}`)
     i += 1
   }
 
